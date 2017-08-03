@@ -14,7 +14,11 @@
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/MainMenu.nib</key>
 		<data>
-		6H/IvQs4qaVFISVWMO8St5SZEAU=
+		UGI2rV4kszSmGnvfRGSTxRs1Q3k=
+		</data>
+		<key>Resources/archived-expanded-entitlements.xcent</key>
+		<data>
+		5cn1EhOkm52spY+3xC9SNHNjJos=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -154,7 +158,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AjbOfn/GE5Rnj+hGv7ptKLtRD69YlUH/+i70sztLXPM=
+			SBRn+vB8O/Z721TrCkJyCpq+tRM49swkx6mdx5bWMYw=
+			</data>
+		</dict>
+		<key>Resources/archived-expanded-entitlements.xcent</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mdrvFnzcZ4iRoLSWAbajSg+uckDCqovUSnU+3BMcfW0=
 			</data>
 		</dict>
 	</dict>
