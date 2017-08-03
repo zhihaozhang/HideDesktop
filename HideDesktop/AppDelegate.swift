@@ -7,11 +7,13 @@
 //
 
 import Cocoa
+import LaunchAtLogin
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     let hideMenuItem = NSMenuItem.init(title: "隐藏桌面图标", action: #selector(toggleHideDesktopFiles(sender:)), keyEquivalent: "")
+    let startAtLoginItem = NSMenuItem.init(title: "开机启动", action: #selector(startAtLoginTog), keyEquivalent: "")
     let statusItem = NSStatusBar.system().statusItem(withLength: NSSquareStatusItemLength)
     var desktopCreated = "unknown"
     
@@ -22,7 +24,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let menu = NSMenu()
         
         let DevelopMenuItem = NSMenuItem.init(title: "Developped by Zhihao", action: #selector(toMyGithub), keyEquivalent: "")
+        
+       
+        
         menu.addItem(self.hideMenuItem)
+        menu.addItem(NSMenuItem.separator())
+        menu.addItem(self.startAtLoginItem)
         menu.addItem(NSMenuItem.separator())
         menu.addItem(DevelopMenuItem)
         menu.addItem(NSMenuItem.separator())
@@ -51,6 +58,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         statusItem.menu = menu
         
+    }
+    
+    func startAtLoginTog(){
+        if startAtLoginItem.state == NSOnState{
+            startAtLoginItem.state = NSOffState
+            LaunchAtLogin.isEnabled = false
+            
+        }else{
+            startAtLoginItem.state = NSOnState
+            LaunchAtLogin.isEnabled = true
+        }
     }
     
     func toMyGithub(){
