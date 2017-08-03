@@ -14,20 +14,11 @@
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/MainMenu.nib</key>
 		<data>
-		VLaHvcd+AF1ejW+BJL9SUT0I88c=
+		v2ilz7g0aLJtkH4MxoNbEj0rXDI=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/LaunchAtLogin.framework</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			iakhJB61cYhc5Lezvj+v2JW63NA=
-			</data>
-			<key>requirement</key>
-			<string>identifier "com.sindresorhus.LaunchAtLogin" and anchor apple generic and certificate leaf[subject.CN] = 0x4d616320446576656c6f7065723a20e5bf97e8b1aa205a68616e6720284638373533413738333329 and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
-		</dict>
 		<key>Frameworks/libswiftAppKit.dylib</key>
 		<dict>
 			<key>cdhash</key>
@@ -154,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VYiAhvgq6w5cJ6Fp+XRYaxrb3UWNJGY9HYIRgsmdXOk=
+			FzMDoSJRdpo6tFcn8HuVDeLIt8LbI9xDQGK5DLBLucI=
 			</data>
 		</dict>
 	</dict>

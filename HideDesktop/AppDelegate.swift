@@ -13,7 +13,8 @@ import LaunchAtLogin
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     let hideMenuItem = NSMenuItem.init(title: "隐藏桌面图标", action: #selector(toggleHideDesktopFiles(sender:)), keyEquivalent: "")
-    let startAtLoginItem = NSMenuItem.init(title: "开机启动", action: #selector(startAtLoginTog), keyEquivalent: "")
+    let LaunchMenuItem = NSMenuItem.init(title: "开机启动", action: #selector(LaunchTog), keyEquivalent: "")
+
     let statusItem = NSStatusBar.system().statusItem(withLength: NSSquareStatusItemLength)
     var desktopCreated = "unknown"
     
@@ -24,15 +25,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let menu = NSMenu()
         
         let DevelopMenuItem = NSMenuItem.init(title: "Developped by Zhihao", action: #selector(toMyGithub), keyEquivalent: "")
-        
-       
-        
         menu.addItem(self.hideMenuItem)
         menu.addItem(NSMenuItem.separator())
-        menu.addItem(self.startAtLoginItem)
+        menu.addItem(LaunchMenuItem)
         menu.addItem(NSMenuItem.separator())
         menu.addItem(DevelopMenuItem)
-        menu.addItem(NSMenuItem.separator())
         let MenuItem = NSMenuItem.init(title: "好用记得star.", action: nil, keyEquivalent: "")
         menu.addItem(MenuItem)
         menu.addItem(NSMenuItem.separator())
@@ -58,17 +55,28 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         statusItem.menu = menu
         
+//        print(LaunchAtLogin.isEnabled)
+//        LaunchAtLogin.isEnabled = true
+//        
+//        print(LaunchAtLogin.isEnabled)
+        if LaunchAtLogin.isEnabled == true{
+            LaunchMenuItem.state = NSOnState
+        }else{
+            LaunchMenuItem.state = NSOffState
+        }
+        
+        
     }
     
-    func startAtLoginTog(){
-        if startAtLoginItem.state == NSOnState{
-            startAtLoginItem.state = NSOffState
+    func LaunchTog(){
+        if LaunchMenuItem.state == NSOnState{
+            LaunchMenuItem.state = NSOffState
             LaunchAtLogin.isEnabled = false
-            
         }else{
-            startAtLoginItem.state = NSOnState
+            LaunchMenuItem.state = NSOnState
             LaunchAtLogin.isEnabled = true
         }
+        print(LaunchAtLogin.isEnabled)
     }
     
     func toMyGithub(){

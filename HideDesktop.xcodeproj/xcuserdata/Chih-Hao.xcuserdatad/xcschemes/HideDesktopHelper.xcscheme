@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE99FC0F1F32CF65009CF23E"
+               BlueprintIdentifier = "CE1A52B01F32FC3800D3826E"
                BuildableName = "HideDesktopHelper.app"
                BlueprintName = "HideDesktopHelper"
                ReferencedContainer = "container:HideDesktop.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE99FC0F1F32CF65009CF23E"
+            BlueprintIdentifier = "CE1A52B01F32FC3800D3826E"
             BuildableName = "HideDesktopHelper.app"
             BlueprintName = "HideDesktopHelper"
             ReferencedContainer = "container:HideDesktop.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE99FC0F1F32CF65009CF23E"
+            BlueprintIdentifier = "CE1A52B01F32FC3800D3826E"
             BuildableName = "HideDesktopHelper.app"
             BlueprintName = "HideDesktopHelper"
             ReferencedContainer = "container:HideDesktop.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE99FC0F1F32CF65009CF23E"
+            BlueprintIdentifier = "CE1A52B01F32FC3800D3826E"
             BuildableName = "HideDesktopHelper.app"
             BlueprintName = "HideDesktopHelper"
             ReferencedContainer = "container:HideDesktop.xcodeproj">
