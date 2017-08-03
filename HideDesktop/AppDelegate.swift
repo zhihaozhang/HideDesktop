@@ -26,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(NSMenuItem.separator())
         menu.addItem(DevelopMenuItem)
         menu.addItem(NSMenuItem.separator())
-        let MenuItem = NSMenuItem.init(title: "All rights reserved.", action: nil, keyEquivalent: "")
+        let MenuItem = NSMenuItem.init(title: "好用记得star.", action: nil, keyEquivalent: "")
         menu.addItem(MenuItem)
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem.init(title: "退出", action: #selector(quit), keyEquivalent: ""))
@@ -56,7 +56,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func toMyGithub(){
         
         
-        if let url = URL(string: "https://github.com/zhihaozhang"), NSWorkspace.shared().open(url) {
+        if let url = URL(string: "https://github.com/zhihaozhang/HideDesktop"), NSWorkspace.shared().open(url) {
             print("default browser was successfully opened")
         }
         
